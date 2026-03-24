@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
+    body, html {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+    }
+
+    .slideshow {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      animation: fadeShow 26.65s infinite;
+    }
+
+    .s1  { background-image: url("https://cdn.jsdelivr.net/gh/laurenced101/Website-Images@main/Slideshow%20Images/ML.jpeg"); animation-delay: 0s; }
+    .s2  { background-image: url("https://cdn.jsdelivr.net/gh/laurenced101/Website-Images@main/Slideshow%20Images/LEGO%20House.jpeg"); animation-delay: 2.05s; }
+    .s3  { background-image: url("https://cdn.jsdelivr.net/gh/laurenced101/Website-Images@main/Slideshow%20Images/Assist.jpeg"); animation-delay: 4.1s; }
+    .s4  { background-image: url("https://cdn.jsdelivr.net/gh/laurenced101/Website-Images@main/Slideshow%20Images/Watch.jpeg"); animation-delay: 6.15s; }
+    .s5  { background-image: url("https://cdn.jsdelivr.net/gh/laurenced101/Website-Images@main/Slideshow%20Images/LEGO%20Fox.jpeg"); animation-delay: 8.2s; }
+    .s6  { background-image: url("https://cdn.jsdelivr.net/gh/laurenced101/Website-Images@main/Slideshow%20Images/Duran%20Duran.jpeg"); animation-delay: 10.25s; }
+    .s7  { background-image: url("https://cdn.jsdelivr.net/gh/laurenced101/Website-Images@main/Slideshow%20Images/Desk.jpeg"); animation-delay: 12.3s; }
+    .s8  { background-image: url("https://cdn.jsdelivr.net/gh/laurenced101/Website-Images@main/Slideshow%20Images/LEGO%20Movie.jpeg"); animation-delay: 14.35s; }
+    .s9  { background-image: url("https://cdn.jsdelivr.net/gh/laurenced101/Website-Images@main/Slideshow%20Images/Brainwash.jpeg"); animation-delay: 16.4s; }
+    .s10 { background-image: url("https://cdn.jsdelivr.net/gh/laurenced101/Website-Images@main/Slideshow%20Images/Cooking.jpeg"); animation-delay: 18.45s; }
+    .s11 { background-image: url("https://cdn.jsdelivr.net/gh/laurenced101/Website-Images@main/Slideshow%20Images/Augmoto.jpeg"); animation-delay: 20.5s; }
+    .s12 { background-image: url("https://cdn.jsdelivr.net/gh/laurenced101/Website-Images@main/Slideshow%20Images/LEGO%20Creator.jpeg"); animation-delay: 22.55s; }
+    .s13 { background-image: url("https://cdn.jsdelivr.net/gh/laurenced101/Website-Images@main/Slideshow%20Images/LEGO%20Minifigs.jpeg"); animation-delay: 24.6s; }
+
+    @keyframes fadeShow {
+      0%      { opacity: 0; }
+      1.5009% { opacity: 1; }
+      7.5047% { opacity: 1; }
+      9.0066% { opacity: 0; }
+      100%    { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="slideshow">
+    <div class="slide s1"></div>
+    <div class="slide s2"></div>
+    <div class="slide s3"></div>
+    <div class="slide s4"></div>
+    <div class="slide s5"></div>
+    <div class="slide s6"></div>
+    <div class="slide s7"></div>
+    <div class="slide s8"></div>
+    <div class="slide s9"></div>
+    <div class="slide s10"></div>
+    <div class="slide s11"></div>
+    <div class="slide s12"></div>
+    <div class="slide s13"></div>
+  </div>
+</body>
+</html>
